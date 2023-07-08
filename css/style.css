@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primary-black-color: #212121;
+  --logo-black: #000000;
+  --text-white-opacity: rgba(255, 255, 255, 0.6);
+  --button-primary-hover: #188ce8;
+  --button-filter: #f5f4fa;
+  --background-black: #2f303a;
+  --background-grey: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style-type: none; /* remove default bullet style */
+}
+
+/* header and navigation */
+.logo-link {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  padding-left: 145px;
+}
+
+.logo {
+  color: #4d5ae5;
+  font-weight: 800;
+  margin-right: -5px;
+}
+
+/* header styling */
+.studio {
+  color: #2e2f42;
+  font-weight: 800;
+  margin-left: -5px;
+  text-indent: 30px;
+}
+
+/* footer styling */
+.studio2 {
+  color: var(--primary-white-color);
+  font-weight: 800;
+}
+
+/* styling for Studio, Portfolio, and Contacts */
+.nav-menu .page {
+  color: var(--primary-black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none; /* to remove underline in hyperlink */
+}
+
+/* Navigation Menu Positioning */
+.nav-menu {
+  width: 261px;
+  height: 24px;
+  left: 400px;
+  top: 3px;
+  padding: 0px;
+
+  text-decoration: none;
+  list-style: none;
+
+  display: flex;
+  gap: 40px;
+  position: absolute;
+}
+
+/* page:hover - when you point to the text, mouse pointer will change
+   page:focus - when clicked, action will be carried out 
+   PSEUDO CLASS */
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .page.current,
+.contacts-menu .item:hover,
+.contacts-menu .item:focus {
+  color: var(--accent-color);
+}
+
+/* Styling for Email and Contact No. */
+.contacts-menu .item {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none; /* to remove underline in hyperlink */
+}
+
+/* Contacts Menu Positioning */
+.contacts-menu {
+  width: 400px;
+  height: 24px;
+  left: 940px;
+  top: 5px;
+  text-decoration: none;
+
+  display: flex;
+  gap: 40px;
+  position: absolute;
+}
+
+/* Backgound */
+.bg-hero {
+  background: var(--background-black);
+  width: 1440px;
+  height: 490px;
+}
+
+/* Styling for H1 */
+.hero-title {
+  color: var(--primary-white-color);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 130px;
+}
+
+/* button styling and positioning index.html */
+.button {
+  cursor: pointer;
+  border-color: transparent;
+  font-family: inherit; /* to inherit the font */
+  letter-spacing: 0.03em;
+
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+
+  top: 350px;
+  left: 636px;
+}
+
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+/* button pseudoclass */
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--button-primary-hover);
+}
+
+/* button styling portfolio.html */
+.button.filter {
+  background-color: var(--button-filter);
+  color: var(--primary-black-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.button.filter:hover,
+.button.filter:focus,
+.button.filter.current {
+  background-color: var(--button-primary-hover);
+  color: var(--button-filter);
+}
+
+/* list styling index.html */
+.benefits .title {
+  color: var(--primary-black-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.benefits.description {
+  line-height: 1.71;
+}
+
+/* list positioning index.html */
+.benefits {
+  width: 1128px;
+  height: 104px;
+  flex-shrink: 0;
+  gap: 20px;
+  left: 200px;
+  top: 20px;
+  display: flex;
+  position: relative;
+}
+
+/* H2 styling portfolio.html */
+.section-title {
+  color: var(--navyblue, #2e2f42);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  top: 100px;
+  position: relative;
+}
+
+/* image positioning index.html */
+.what-we-do {
+  width: 1128px;
+  height: 412px;
+  flex-shrink: 0;
+
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  top: 100px;
+  left: 90px;
+  position: relative;
+}
+
+/* Our Team styling portfolio.html */
+.bg-team {
+  background-color: var(--background-grey);
+}
+
+.team.name,
+.team.position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team.name {
+  color: var(--primary-black-color);
+  font-weight: 500;
+}
+
+/* Our Team Images positioning*/
+.team {
+  width: 1440px;
+  height: 732px;
+  flex-shrink: 0;
+
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+}
+
+/* footer */
+.bg-footer {
+  background: var(--background-black);
+}
+
+.footer-description {
+  height: 72px;
+  left: 150px;
+  color: var(--white, #fff);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.project {
+  text-decoration: none;
+}
+
+.project .name {
+  color: var(--primary-black-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project .type {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
