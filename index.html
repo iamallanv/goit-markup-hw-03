@@ -4,60 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Homework 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="icon" href="./images/goit.png" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="page-header">
-      <nav>
-        <a href="#" class="logo-link">
-          <span class="logo">Web</span>
-          <span class="studio">Studio</span>
-        </a>
+      <div class="container menu">
+        <nav class="navigation">
+          <a href="#" class="logo-link">
+            <span class="logo">Web</span>
+            <span class="studio">Studio</span>
+          </a>
 
-        <ul class="nav-menu list">
-          <li>
-            <a href="#" class="page current">Studio</a>
+          <ul class="nav-menu list">
+            <li class="item">
+              <a href="#" class="page current link">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="page link">Portfolio</a>
+            </li>
+            <li class="item">
+              <a href="#" class="page link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Address -->
+        <ul class="contacts-menu list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="contact link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li>
-            <a href="./portfolio.html" class="page">Portfolio</a>
-          </li>
-          <li>
-            <a href="#" class="page">Contacts</a>
+          <li class="item">
+            <a href="tel:+110001111111" class="item">+11 (000) 111-11-11</a>
           </li>
         </ul>
-      </nav>
-      <!-- Address -->
-      <ul class="contacts-menu list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="item"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+110001111111" class="item">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!-- Main Section -->
     <main>
       <section class="hero bg-hero">
-        <h1 class="hero-title">
-          Effective Solutions <br />
-          for Your Business
-        </h1>
-        <button type="button" class="button primary">Order Service</button>
+        <div class="container">
+          <h1 class="hero-title">
+            Effective Solutions <br />
+            for Your Business
+          </h1>
+          <button type="button" class="button primary">Order Service</button>
+        </div>
       </section>
 
       <!-- Section 1 -->
       <section class="section">
         <div class="container">
           <ul class="benefits list">
-            <li>
+            <li class="item">
               <h3 class="title">Strategy</h3>
               <p class="description">
                 Our goal is to identify the business <br />
@@ -65,7 +74,7 @@
                 perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Punctuality</h3>
               <p class="description">
                 Bring the key message to the <br />
@@ -73,7 +82,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Diligence</h3>
               <p class="description">
                 Research and confirm brands that <br />
@@ -81,7 +90,7 @@
                 opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Technologies</h3>
               <p class="description">
                 Design practice focused on digital <br />
@@ -94,31 +103,31 @@
       </section>
 
       <!-- Section 2 -->
-      <section class="section">
+      <section class="section no-top-padding">
         <div class="container">
           <h2 class="section-title">What Are We Doing</h2>
           <ul class="what-we-do list">
-            <li>
+            <li class="item">
               <img
-                class="image1"
+                class="image"
                 src="./images/img-1.jpg"
                 alt="Monitor"
                 width="370"
                 height="294"
               />
             </li>
-            <li>
+            <li class="item">
               <img
-                class="image2"
+                class="image"
                 src="./images/img-2.jpg"
                 alt="Mobile"
                 width="370"
                 height="294"
               />
             </li>
-            <li>
+            <li class="item">
               <img
-                class="image3"
+                class="image"
                 src="./images/img-3.jpg"
                 alt="Laptop and Mobile"
                 width="370"
@@ -134,8 +143,9 @@
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team list">
-            <li>
+            <li class="item">
               <img
+                class="image"
                 src="./images/Mark.jpg"
                 alt="Mark Guerrero"
                 width="270"
@@ -145,8 +155,9 @@
               <p class="position">Product Designer</p>
             </li>
 
-            <li>
+            <li class="item">
               <img
+                class="image"
                 src="./images/Tom.jpg"
                 alt="Tom Ford"
                 width="270"
@@ -156,8 +167,9 @@
               <p class="position">Frontend Developer</p>
             </li>
 
-            <li>
+            <li class="item">
               <img
+                class="image"
                 src="./images/Camila.jpg"
                 alt="Camila Garcia"
                 width="270"
@@ -167,8 +179,9 @@
               <p class="position">Marketing</p>
             </li>
 
-            <li>
+            <li class="item">
               <img
+                class="image"
                 src="./images/Daniel.jpg"
                 alt="Daniel Wilson"
                 width="270"
@@ -184,7 +197,7 @@
 
     <!-- Footer -->
     <footer class="page-footer bg-footer">
-      <div>
+      <div class="container">
         <a href="#" class="logo-link">
           <span class="logo">Web</span>
           <span class="studio2">Studio</span>
