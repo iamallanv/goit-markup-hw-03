@@ -114,7 +114,6 @@ body {
   left: 940px;
   top: 5px;
   text-decoration: none;
-
   display: flex;
   gap: 40px;
   position: absolute;
@@ -150,9 +149,6 @@ body {
   align-items: center;
   gap: 10px;
   position: absolute;
-
-  top: 350px;
-  left: 636px;
 }
 
 .button.primary {
@@ -162,6 +158,8 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  top: 350px;
+  left: 636px;
 }
 
 /* button pseudoclass */
@@ -171,12 +169,26 @@ body {
 }
 
 /* button styling portfolio.html */
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .button.filter {
   background-color: var(--button-filter);
   color: var(--primary-black-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  margin: 5px;
+  padding: 12px 24px;
+  gap: 24px;
+  flex-direction: row;
+  position: relative;
+  border-radius: 4px;
 }
 
 .button.filter:hover,
@@ -287,6 +299,18 @@ body {
 
 .project {
   text-decoration: none;
+}
+
+/* Images positioning - portfolio.html */
+.projects {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+
+  gap: 50px;
 }
 
 .project .name {
