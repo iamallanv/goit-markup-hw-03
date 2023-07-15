@@ -101,6 +101,9 @@ img {
 .logo {
   color: #4d5ae5;
   font-weight: 800;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 /* Checked */
@@ -115,6 +118,7 @@ img {
   font-weight: 800;
   margin-left: -5px;
   text-indent: 30px;
+  font-size: 18px;
 }
 
 /* footer styling */
@@ -122,6 +126,8 @@ img {
 .studio2 {
   color: var(--primary-white-color);
   font-weight: 800;
+  font-size: 18px;
+  margin-left: -5px;
 }
 
 /* Navigation Menu Positioning */
@@ -143,7 +149,7 @@ img {
 }
 
 /* Checked */
-.pageheader {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -333,8 +339,8 @@ img {
 }
 
 /* Checked */
-.team.name,
-.team.position {
+.team .name,
+.team .position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -349,10 +355,10 @@ img {
 }
 
 /* Checked */
-.team.name {
+.team .name {
   color: var(--primary-black-color);
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -390,6 +396,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 20px;
+  padding-left: 145px;
 }
 
 /* Images positioning - portfolio.html */
@@ -404,8 +411,8 @@ img {
 /* Checked */
 .project-card {
   flex-basis: calc(100% / 3 - 30px);
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 /* Checked */
